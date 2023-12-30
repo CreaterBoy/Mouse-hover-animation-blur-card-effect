@@ -1,0 +1,55 @@
+body {
+    background-image: url(../İMG/BG-website.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.blur-box {
+    width: 550px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.1);
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.blur-box:hover .title {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.description {
+    padding: 10px 70px;
+    text-align: center;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.blur-box:hover .description {
+    transform: translateY(0px);
+    opacity: 1;
+}
